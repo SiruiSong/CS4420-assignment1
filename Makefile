@@ -11,7 +11,7 @@ $(TARGET): $(SRCS)
 
 tests: test
 test: $(TARGET)
-	chmod u+rx newtest.?
+	chmod 777 *.*
 	-./newtest.1
 	-./newtest.2
 	-./newtest.3
