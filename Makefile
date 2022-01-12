@@ -5,13 +5,13 @@ TARGET=filesize
 SRCS=$(TARGET).cc
 
 all: $(TARGET)
-	chmod 777 *.*
+	chmod u+x newtest.?
 
 $(TARGET): $(SRCS) 
 
 tests: test
 test: $(TARGET)
-	chmod 777 *.*
+	chmod u+rx newtest.?
 	-./newtest.1
 	-./newtest.2
 	-./newtest.3
